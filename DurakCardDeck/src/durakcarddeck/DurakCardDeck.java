@@ -24,6 +24,11 @@ public class DurakCardDeck {
         int playerCount = 3;
         do {
             System.out.print("Enter the number of players (between 2 and 6): ");
+            while (!scan.hasNextInt()) {
+                System.out.print("That not a number!\n"
+                        + "Please!Enter the number of players (between 2 and 6): ");
+                scan.next();
+            }
             playerCount = scan.nextInt(); //show this, while false count of players
         } while (playerCount < 2 || playerCount > 6);
         CardGame game = new CardGame(playerCount);
