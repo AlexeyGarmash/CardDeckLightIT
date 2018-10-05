@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 /**
+ * Class represents a work with card deck.
  *
  * @author Alex
  */
